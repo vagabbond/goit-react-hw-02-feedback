@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { FeedbackButtonWrap, FeedbackButton } from './Feedback.styled';
 
 const ButtonList = ({ options, hadleClick }) => {
@@ -10,6 +12,11 @@ const ButtonList = ({ options, hadleClick }) => {
       ))}
     </FeedbackButtonWrap>
   );
+};
+
+ButtonList.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  hadleClick: PropTypes.func.isRequired,
 };
 
 export default ButtonList;
