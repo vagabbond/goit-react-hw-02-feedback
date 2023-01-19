@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import { FeedbackStatistics, FeedbackStatisticsItem } from './Feedback.styled';
 
@@ -21,10 +21,10 @@ const Statistics = ({ options, feedbackArr, total, positivePercentage }) => {
 };
 
 Statistics.propTypes = {
-  options: propTypes.arrayOf(propTypes.string.isRequired).isRequired,
-  feedbackArr: propTypes.arrayOf(propTypes.number.isRequired).isRequired,
-  total: propTypes.number.isRequired,
-  positivePercentage: propTypes.number.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  feedbackArr: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
